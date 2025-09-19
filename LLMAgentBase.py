@@ -65,6 +65,6 @@ my_agent = LLMAgentBase(
 
 opponent = RandomPlayer(
     account_configuration=PlayerConfiguration("opponent", None),
-    server_configuration=ShowdownServerConfiguration,
+    server_configuration= LocalhostServerConfiguration, #ShowdownServerConfiguration                           
     battle_format="randombattle",
 )
